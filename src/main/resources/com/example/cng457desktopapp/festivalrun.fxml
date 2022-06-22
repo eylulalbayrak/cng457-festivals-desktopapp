@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cng457desktopapp.FestivalRunController">
+  <children>
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="300.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ComboBox fx:id="festival" layoutX="75.0" layoutY="72.0" onAction="#initialize" prefWidth="150.0" />
+            <TextField fx:id="duration" layoutX="75.0" layoutY="149.0" />
+            <Label layoutX="75.0" layoutY="120.0" text="Festival Run Duration" />
+            <Label layoutX="78.0" layoutY="197.0" text="Festival Run Date" />
+            <Label layoutX="75.0" layoutY="46.0" text="Choose Festival:" />
+            <Button fx:id="add" layoutX="131.0" layoutY="291.0" mnemonicParsing="false" onAction="#addFestivalRun" text="Add" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="78.0" layoutY="7.0" text="Add Festival Run">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="date" layoutX="75.0" layoutY="223.0" maxWidth="149.6" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
